@@ -21,6 +21,7 @@
         <li><a href="{{ route('schedule') }}">SCHEDULE</a></li>
         <li><a href="{{ route('venue') }}">VENUE/TRAVEL</a></li>
         <li><a href="{{ route('register') }}">REGISTER</a></li>
+        <li><a href="{{ route('asistentes.index') }}">ASISTENTES</a></li>
       </ol>
     </nav>
   </header>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AsistenteController;
 
 Route::get('/', function () {
     return view('home');
@@ -25,6 +26,9 @@ Route::get('/venue', function () {
 Route::get('/register', function () {
     return view('register');
 })->name('register');
+
+Route::resource('asistentes', AsistenteController::class);
+
 
 
 

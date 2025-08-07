@@ -12,7 +12,8 @@
     <!-- About the event -->
 
     <article id="registrationform">
-      <form method="POST" enctype="text/plain">
+    <form method="POST" action="{{ route('asistentes.store') }}">
+        @csrf
         <fieldset>
           <legend>Personal Info</legend>
           <ol>
@@ -46,8 +47,8 @@
               <textarea name="mycomments" id="mycomments"></textarea>
             </li>
             <li class="singleline">
-              <input type="checkbox" id="subscribe" name="subscribe" checked="" value="yes">
-              <label for="subscribe">Subscribe to our mailing list?</label>
+              <input type="checkbox" id="suscripcion" name="suscripcion" checked="" value="yes">
+              <label for="suscripcion">Subscribe to our mailing list?</label>
             </li>
             <li>
               <label for="reference">How did you hear about us?</label>
